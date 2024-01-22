@@ -25,11 +25,11 @@ git commit -m "Your commit message"
 
 ### 5. Push Changes to Your Fork
 ```bash
-git push origin main
+git push origin master
 ```
 Set the upstream branch for future pushes (only needed once):
 ```bash
-git push -u origin main
+git push -u origin master
 ```
 
 ### 6. Setting Up GitHub Authentication
