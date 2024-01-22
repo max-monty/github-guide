@@ -33,32 +33,7 @@ git push -u origin main
 ```
 
 ### 6. Setting Up GitHub Authentication
-Generate a new SSH key (or use an existing one):
-```bash
-ssh-keygen -t ed25519 -C "your_email@example.com"
-Add your SSH key to the ssh-agent:
-```
-```bash
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
-```
-Copy the SSH key to your clipboard:
-
-For Windows:
-```bash
-clip < ~/.ssh/id_ed25519.pub
-```
-For Mac:
-```bash
-pbcopy < ~/.ssh/id_ed25519.pub
-```
-Add the SSH key to your GitHub account:
-
-Go to GitHub and navigate to your account settings.
-Click on "SSH and GPG keys" and then "New SSH key".
-Paste your key and save it.
-
-Test your SSH connection:
-```bash
-ssh -T git@github.com
-```
+- Go to Settings -> Developer Settings -> Personal Access Tokens
+- Generate Classic Personal Access Token
+- Save on your computer
+- When you push to GitHub from the terminal, copy and paste your PAT as your password
