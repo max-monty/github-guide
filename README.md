@@ -20,7 +20,7 @@ Make changes to the code using your text editor or IDE.
 ### 4. Commit Changes
 ```bash
 git add .
-git commit -m "Your commit message"
+git commit -am "Your commit message"
 ```
 
 ### 5. Push Changes to Your Fork
